@@ -1,0 +1,57 @@
+---
+//Components
+import MyTitle from '../components/MyTitle.astro';
+
+import '../styles/global.css';
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const {
+	title = 'Revista: ExpreSciencia',
+	description = 'La revista ExpreSciencia es una revista de publicación semestral y de publicación contínua perteneciente al Instituto Tecnológico de Zacatecas editada a través de la División de Estudios de Posgrado e Investigación.',
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" property="og:description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+
+<link rel="icon" type="image/svg+xml" href="./assets/icono.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,700;1,400&family=Rubik:wght@500;600&display=swap"
+	rel="stylesheet"
+/>
+
+
+<nav class="bg-blue-900 border-blue-600 dark:bg-blue-900" style="height: 10%;">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-1 md:px-1 py-2.5">
+        <a href="https://tecnm.mx" class="flex items-center my-2" target="_blank">
+            <img src="./assets/tecnm.png" class="lg:h-30 md:h-20 sm:h-10 h-10" alt="TecNM" />
+        </a>
+		<a href="https://zacatecas.tecnm.mx" class="flex items-center" target="_blank">
+			<img src="./assets/itz.png" class="lg:h-30 md:h-20 sm:h-10 h-10 flex-row" alt="ITZ" />
+		</a>
+		<a href="/" class="flex items-center">
+			<img src="./assets/expresciencia.png" class="lg:h-20 md:h-19 sm:h-10 h-5 flex-row" alt="ExpreSciencia" />
+		</a>    
+	</div>
+</nav>
+<nav class="bg-blue-900 border-blue-600 dark:bg-blue-900 pt-5">
+	<header class="hero">
+		<MyTitle 
+			title="ExpreSciencia"
+			tagline="Revista de Divulgación Científica y Tecnológica del Instituto Tecnológico de Zacatecas"
+			align="center"
+		>
+		</MyTitle>
+	</header>
+</nav>
+
+
+

@@ -1,0 +1,373 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import MyCard from '../components/MyCard.astro';
+
+---
+<script src="https://unpkg.com/phosphor-icons"></script>
+<BaseLayout title="Index">
+<div class="stack gap-20">
+    <main class="wrapper about">
+        <Hero
+            title="Comités"
+            tagline=""
+        >
+        </Hero>
+        <section>
+            <h2 class="section-title"></h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left">
+					Los Comités Editorial y Científico que conforman la revista <strong class="font-semibold text-gray-900">ExpreSciencia</strong> están conformados por:				
+				</div> 
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Comité Editorial</h2>
+            <div class="content sm-flex">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left">
+					El Consejo Editorial tiene carácter de órgano rector, consultivo, normativo y de vigilancia en la materia; producción de obra editorial, difusión y divulgación del conocimiento. Sus integrantes son:			
+				</div> 
+                 <section class="container mx-auto py-5 md:py-5 antialiased ">
+                    <section class="grid lg:grid-cols-3 2xl:grid-cols-4 grid-cols-1 gap-8">
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                María del Rosario Bernal Díaz
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Subdirectora de Planeación y Vinculación
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Presidente del Consejo Editorial
+                        </p>   
+                        <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            <a href="https://orcid.org/0000-0003-2869-0317"> <i class="ph-link"></i>https://orcid.org/0000-0003-2869-0317 </a>
+                        </p>          
+                        </article>                        
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Roberto Ortíz Delgadilo
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Director
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                Invitado
+                            </p>                            
+                        </article>
+            
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                           <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                           <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                            Hermila Saucedo García
+                        </h2>
+                        <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Subdirectora Académica
+                        </p>
+                        <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Invitado
+                        </p>          
+                        </article>
+            
+
+
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Primo Bañuelos Casas
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Subdirector Administrativo
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Invitado
+                        </p>          
+                         </article>
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Estela Rivera
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Jefa del Departamento de Comunicación y Difusión
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Secretaria Técnica
+                        </p>          
+                         </article>
+
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Francisco Gutiérrez Reynoso
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Jefe del Centro de Información
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Miembro
+                        </p>          
+                         </article>
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Ma. De Lourdes Balderas Castañeda
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Jefa de la División de Estudios de Posgrado e Investigación
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Miembro
+                        </p>          
+                         </article>
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Alfonso Escobar Torres
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Jefe de la División de Estudios Profesionales
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Miembro
+                        </p>          
+                         </article>
+                         <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <!-- <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/director.png" alt="" /> -->
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Froylán Félix Inguanzo
+                         </h2>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                            Jefe del Departamento de Recursos Materiales y de Servicios
+                         </p>
+                         <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                            Miembro
+                        </p>          
+                         </article>                         
+                    </section>
+                </section>
+            </div>
+        </section>
+        <section>
+            <h2 class="section-title">Comité Científico</h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left">
+					El comité científico se encuentra conformado por los siguientes miembros:
+				</div> 
+                <section class="container mx-auto py-5 md:py-5 antialiased ">
+                    <section class="grid lg:grid-cols-3 2xl:grid-cols-4 grid-cols-1 gap-8">
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/marco.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Marco Alonso García Romero
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Editor 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0000-0002-9551-5204"> <i class="ph-link"></i>https://orcid.org/0000-0002-9551-5204</a>
+                            </p>                            
+                        </article>
+            
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/ivan.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Jaime Iván López Veyna
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0000-0002-9225-3202"> <i class="ph-link"></i>https://orcid.org/0000-0002-9225-3202</a>
+                            </p>                            
+                        </article> 
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/pino.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Juan Carlos Pino Acevedo
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0000-0003-0252-8952"> <i class="ph-link"></i>https://orcid.org/0000-0003-0252-8952</a>
+                            </p>                            
+                        </article>   
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/rubin.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Rubín Ortega de la Rosa
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="http://orcid.org/0000-0001-9357-924X"> <i class="ph-link"></i>http://orcid.org/0000-0001-9357-924X</a>
+                            </p>                            
+                        </article> 
+                                                
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/eustaquio.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Eustaquio Ceballos Dorado
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor 
+                            </p>
+                            <!-- <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="http://orcid.org/0000-0001-9357-924X"> <i class="ph-link"></i>http://orcid.org/0000-0001-9357-924X</a>
+                            </p>                             -->
+                        </article>
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/elsa.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Elsa Ortega de Ávila
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="http://orcid.org/0000-0003-0405-2978"> <i class="ph-link"></i>http://orcid.org/0000-0003-0405-2978</a>
+                            </p>                            
+                        </article> 
+   
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/silvia.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Silvia Jiménez Hernández
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisora 
+                            </p>
+                            <!-- <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="http://orcid.org/0000-0001-9357-924X"> <i class="ph-link"></i>http://orcid.org/0000-0001-9357-924X</a>
+                            </p>                             -->
+                        </article>   
+
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/consuelo.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                María del Consuelo Arguellez Arellano
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisora 
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/my-orcid?orcid=0009-0009-1250-4023"> <i class="ph-link"></i>https://orcid.org/my-orcid?orcid=0009-0009-1250-4023</a>
+                            </p>                            
+                        </article> 
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/juanmanuel.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Juan Manuel Ramírez Aguilera
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0000-0001-5999-2102"> <i class="ph-link"></i>https://orcid.org/0000-0001-5999-2102</a>
+                            </p>                            
+                        </article>      
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/edgardo.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Jesús Edgardo Estrada de la Torre
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0000-0002-9488-0736"> <i class="ph-link"></i>https://orcid.org/0000-0002-9488-0736</a>
+                            </p>                            
+                        </article>   
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/oswaldo.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Oswaldo López
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <a href="https://orcid.org/0009-0006-4192-6282"> <i class="ph-link"></i>https://orcid.org/0009-0006-4192-6282</a>
+                            </p>                            
+                        </article>                     
+                        <article class="mx-auto max-w-sm pb-8 bg-cover bg-center cursor-pointer transform duration-500 hover:-translate-y-1 shadow-2xl rounded-xl">
+                            <img class="mx-auto mb-20 mt-10 w-40" src="./assets/comites/rosalinda.png" alt="" />
+                            <h2 class="text-center text-3xl mt-8 font-bold min-h-18 px-12  text-gray-900">
+                                Rosalinda Nava Zumalacarregui
+                            </h2>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900 ">
+                                Revisor
+                            </p>
+                            <p class="m-4 text-lg p-4 leading-relaxed text-center  text-gray-900">
+                                <!-- <a href="https://orcid.org/0009-0006-4192-6282"> <i class="ph-link"></i>https://orcid.org/0009-0006-4192-6282</a> -->
+                            </p>                            
+                        </article>                       
+                    </section>
+                </section>                
+            </div>
+        </section>
+    </main>
+</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--accent-dark);
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--accent-dark);
+}
+
+.content {
+    grid-column: 2 / 4;
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+</style>

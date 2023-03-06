@@ -1,0 +1,91 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+
+const currentYear = new Date().getFullYear();
+const periodo = "enero - junio "
+const fecha = "30 de abril de 2023"
+---
+<script src="https://unpkg.com/phosphor-icons"></script>
+<BaseLayout title="Index">
+<div class="stack gap-20">
+    <main class="wrapper about">
+        <Hero
+            title="Aviso Legal"
+            tagline=""
+        >
+        </Hero>
+        <section>
+            <h2 class="section-title">Copyright</h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                    DERECHOS DE AUTOR Y DERECHOS CONEXOS, Año 1, No. 1, {periodo} {currentYear}, Expresciencia es una publicación semestral editada por el TecNM campus Zacatecas, a través de la División de Estudios de Posgrado e Investigación en Carretera Panamericana Entronque a Guadalajara S/N, Col. La Escondida, Zacatecas, Zacatecas apartado Postal. 98000., tel. <i class="ph-phone"></i> 492 9247678, página web <a href="https://zacatecas.tecnm.mx"> <i class="ph-link"></i>https://zacatecas.tecnm.mx</a>,  email <a href="mailto:expresciencia@zacatecas.tecnm.mx"> <i class="ph-at"></i> expresciencia@zacatecas.tecnm.mx</a>. 
+                </div>
+                <div class="my-2 text-justify ">   
+                    Editor responsable: <div class="font-semibold inline">Marco Alonso García Romero.</div> Reservas de Derechos al Uso Exclusivo No. (en trámite), ISSN: (en trámite), ambos otorgados por el Instituto Nacional del Derecho de Autor, Licitud de Título y contenido No. 1234 (en trámite), otorgado por la Comisión Calificadora de Publicaciones y Revistas Ilustradas de la Secretaría de Gobernación. Permiso SEPOMEX No. 010203 (en trámite). Impresa por (pendiente)., este número se terminó de imprimir el {fecha} con un tiraje de 1,000 ejemplares.
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--accent-dark);
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--accent-dark);
+}
+
+.content {
+    grid-column: 2 / 4;
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+</style>

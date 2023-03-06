@@ -1,0 +1,436 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Icon from '../components/Icon.astro';
+
+const tipos=[
+			 "Articulo de investigación científica y tecnológica",
+			 "Artículo de divulgación del conocimiento",
+			 "Informe de estudio de caso",
+			 "Reseña",
+			]
+---
+<script src="https://unpkg.com/phosphor-icons"></script>
+<BaseLayout title="Index">
+<div class="stack gap-20">
+    <main class="wrapper about">
+        <Hero
+            title="Guia para autores"
+            tagline=""
+        >
+        </Hero>
+        <section>
+            <h2 class="section-title">Modalidades</h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+				Las publicaciones recibidas en la revista <strong class="font-semibold text-gray-900">ExpreSciencia</strong> deberán ser inéditas y originales, que muestren el conocimiento científico y tecnológico en alguna de las siguientes modalidades:
+				</div>
+                <section>
+                    <h2 class="section-title"></h2>
+                    <div class="content">
+                        <ul class="text-gray-900 list-disc list-inside ml-7">
+                            {
+                                tipos.map((tipo) => (
+                                    <li class="flex pt-2">
+                                        <svg class="w-4 h-4 mr-1.5 mb-4 text-blue-900 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                                        {tipo}
+                                    </li>
+                                ))
+                            }
+                        </ul>						
+                    </div>
+
+                    <div class="my-8 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                        Los artículos tendrán una extensión de 6 a 10 cuartillas, incluyendo imágenes, figuras y tablas, redactado con el estilo de la Asociación Americana de Psicología- APA-. El escrito será en hoja tamaño carta con 2.5 centímetros de margen superior e inferior y 3 centímetros de margen izquierdo y derecho. Tipografía Arial a 12 puntos, interlineado 1.5. El título y/o subtítulo se escribirá con cursiva mayúsculas y minúsculas resaltado en negritas.
+                        </div>
+                </section>
+            </div>
+            <section>
+                <h2 class="section-title py-4">Artículo de investigación científica y tecnológica</h2>
+                <div class="content">
+                    <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                        Es un documento que permite informar resultados inéditos de una investigación científica o tecnológica que son relevantes dentro de algún área del conocimiento y son de interés científico. Se estructura de la siguiente manera:
+                    </div>
+                    <section>
+                        <h2 class="section-title py-4">Título</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Debe ser breve y que identifique de manera clara el contenido del trabajo. Con una extensión máxima de 25 palabras en idioma español.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Nombre de los autores.</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Se deberá indicar primero el nombre completo del autor principal seguido de los coautores sin mencionar grado académico. Nombre de la institución de adscripción, correo electrónico y número <strong class="font-semibold text-gray-900">ORCID</strong> de cada uno de los integrantes.
+                                Si usted no cuenta con su registro <strong class="font-semibold text-gray-900">ORCID</strong>, puede obtenerlo en el sitio <a href="https://orcid.org/"> <i class="ph-link"></i>https://orcid.org/</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Resumen</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Tendrá una extensión máxima de 250 palabras y presentará en un solo párrafo una descripción breve del planteamiento del problema, los resultados y las conclusiones. Se deberá anexar su equivalente en inglés (abstract).
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Palabras clave</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener de 3 a 5 palabras clave que identifiquen el contenido del trabajo, separadas por coma. Se deberá incluir además la versión en Inglés (keywords).
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Introducción</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener la motivación, objetivos, breve revisión de literatura citando autor y año y la hipótesis.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Procedimiento o metodología</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Describir a detalle la metodología empleada para comprobar la hipótesis y los recursos que fueron utilizados.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Resultados</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Presentar de manera clara los resultados de la investigación apoyándose de cuadros figuras y/o tablas.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Discusión</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener la interpretación del autor sobre los resultados obtenidos y discutir su relevancia en base a los resultados de otros autores.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Conclusiones</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberán dar respuesta a las preguntas formuladas en la introducción y verificar la hipótesis planteada.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Agradecimientos</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Se emplea para mencionar fuentes de financiamiento y agradecer a cualquier otra persona que haya contribuido directa o indirectamente en el trabajo presentado.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Referencias</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberán estar acorde al formato establecido por la American Psychological Association (APA) 7ma. Edición.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Formato</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                El formato para el Artículo de investigación científica y tecnológica lo puede descargar desde el siguiente enlace: <a href="./assets/formatos/articuloinvestigacion.docx"> <i class="ph-microsoft-word-logo"></i>articuloinvestigacion.docx</a>
+                            </div>
+                        </div>
+                    </section>
+                    
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title py-4">Artículo de divulgación del conocimiento</h2>
+                <div class="content">
+                    <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                        Representa un texto escrito por especialistas sobre un área específica y tiene como finalidad difundir conocimiento al público no especializado empleando un lenguaje claro y sintético. Su estructura es la siguiente:
+                    </div>
+                    <section>
+                        <h2 class="section-title py-4">Título</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá ser corto, que presente de manera clara el contenido y que sea atractivo para el lector.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Nombre de los autores.</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Se deberá indicar primero el nombre completo del autor principal seguido de los coautores sin mencionar grado académico. Nombre de la institución de adscripción, correo electrónico y número <strong class="font-semibold text-gray-900">ORCID</strong> de cada uno de los integrantes.
+                                Si usted no cuenta con su registro <strong class="font-semibold text-gray-900">ORCID</strong>, puede obtenerlo en el sitio <a href="https://orcid.org/"> <i class="ph-link"></i>https://orcid.org/</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Resumen</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Tendrá una extensión máxima de 250 palabras y presentará en un solo párrafo una descripción breve del planteamiento del problema, los resultados y las conclusiones. Se deberá anexar su equivalente en inglés (abstract).
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Palabras clave</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener de 3 a 5 palabras clave que identifiquen el contenido del trabajo, separadas por coma. Se deberá incluir además la versión en Inglés (keywords).
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Introducción</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener la presentación del tema, así como responder a la pregunta del porqué es importante el estudio o tema a tratar y presenta algunos antecedentes. 
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Desarrollo</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá presentar en forma clara y ordenada el tema que se plantea difundir. Deberá dar respuesta a las preguntas que una persona sin conocimientos sobre el tema se podría formular.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Conclusiones</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá contener una síntesis sobre la información más relevante del tema presentado haciendo énfasis en el propósito de la divulgación del conocimiento.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Referencias</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Deberá presentar las fuentes consultadas acorde al formato establecido por la American Psychological Association (APA) 7ma. Edición.
+                            </div>
+                        </div>
+                    </section>   
+                    <section>
+                        <h2 class="section-title py-4">Formato</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                El formato para el Artículo de divulgación del conocimiento lo puede descargar desde el siguiente enlace: <a href="./assets/formatos/articulodivulgacion.docx"><i class="ph-microsoft-word-logo"></i>articulodivulgacion.docx</a>
+                            </div>
+                        </div>
+                    </section>                            
+                </div>
+            </section>
+            <section>
+                <h2 class="section-title py-4">Informe de Caso de Estudio</h2>
+                <div class="content">
+                    <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                        El estudio de caso es una estrategia de investigación sobre algún fenómeno, considerando su contexto como un todo. Se basa en la comprensión en conjunto a partir de una descripción y análisis muy detallados. Trata de comprender fenómenos poco estudiados o en un contexto que puede diferir de su generalidad. El estudio de caso se estructura de la siguiente forma:
+
+                    </div>
+                    <section>
+                        <h2 class="section-title py-4">Título</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Debe ser breve y que identifique de manera clara el contenido del trabajo. Con una extensión máxima de 25 palabras en idioma español.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Resumen/Abstract y palabras clave/keywords.</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Permite identificar con una lectura rápida el contenido referente a la investigación y las partes o conceptos que se requieren resaltar. Es útil en las búsquedas rápidas para consultas sobre un tema en específico.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Introducción</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Esta sección busca adentrar al lector sobre lo que será el contenido. Se pueden abordar algún tema o concepto general sobre el tema del que trata el caso. Se presenta el caso de estudio, antecedentes breves y marco referencial. Se presenta la perspectiva del análisis, que da cuenta del debate teórico para justificar la pertinencia de la elección. Se explica brevemente el problema. La línea argumental que desarrolla el texto, la estructura y secuencia del escrito. 
+
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Metodología</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Describe la forma conforme al método científico por medio de la cual se realiza la investigación sobre un estudio de caso considerando su contexto. Aquí se informa sobre el tipo y las herramientas y/o técnicas de investigación que se utilizaron para su estudio. 
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Fundamentación teórica</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                En esta sección se destacan los supuestos teóricos principales que guiaran el análisis. La idea es que se establezcan los constructos clave a utilizar, seguido de su posterior análisis. Intenta demostrar la comprensión de los contenidos de la carrera, para el caso de universitarios. Aquí se sientan las bases para enlazar la teoría con el objeto de estudio.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Análisis</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Es la puesta en marcha de la metodología elegida en la búsqueda por describir y explicar algún fenómeno presentado. 
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Resultados</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Se presentan los principales hallazgos encontrados en el estudio de caso.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Conclusiones</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Debe ser breve y que identifique de manera clara el contenido del trabajo. Con una extensión máxima de 25 palabras en idioma español.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Fuentes de información</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Muestra las fuentes donde se obtuvo la información de acuerdo con el formato que muestra los datos para ampliar alguna información para futuras referencias. Deberán estar acorde al formato establecido por la American Psychological Association (APA) 7ma. Edición.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Formato</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                El formato para el Informe de Caso de Estudio lo puede descargar desde el siguiente enlace: <a href="./assets/formatos/informecaso.docx"> <i class="ph-microsoft-word-logo"></i>informecaso.docx</a>
+                            </div>
+                        </div>
+                    </section>                          
+                </div>
+            </section>
+
+            <section>
+                <h2 class="section-title py-4">Reseña</h2>
+                <div class="content">
+                    <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+                        La reseña es un texto escrito que informa sobre una obra, a la vez presenta un comentario crítico acerca de dicho producto. Su característica fundamental radica en describir y emitir un juicio valorativo del texto fuente
+                    </div>
+                    <section>
+                        <h2 class="section-title py-4">¿Qué tipo de texto es una reseña?
+                        </h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                Es un texto expositivo-argumentativo en el que se expone lo esencial del contenido de una obra académica, literaria, científica, un cuento, una película, una pintura, una biografía, un ensayo, etc. Acompañado de opiniones y juicios fundamentados.
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Partes elementales de una reseña crítica</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                <ul class="pl-5 mt-2 space-y-1 list-inside">
+                                    <li><i class="ph-check  text-gray-900 "></i> Título. Se anota el concepto Reseña y el nombre original de la obra
+                                    </li>
+                                    <li><i class="ph-check  text-gray-900 "></i> Opcional. Resumen y palabras clave</li>
+                                    <li><i class="ph-check  text-gray-900 "></i> Información sobre la obra. Se especifica el nombre del libro, del autor, el año, el lugar de publicación y el número de páginas. Describe y valora el contenido.
+                                    </li>                            
+                                    <li><i class="ph-check  text-gray-900 "></i> Opcional. Referencias.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+                        <h2 class="section-title py-4">Formato</h2>
+                        <div class="content">
+                            <div class="my-2 mb-4 text-justify font-light text-gray-900 "> 
+                                El formato para el Informe de Caso de Estudio lo puede descargar desde el siguiente enlace: <a href="./assets/formatos/resena.docx"> <i class="ph-microsoft-word-logo"></i>resena.docx</a>
+                            </div>
+                        </div>
+                    </section>  
+                    <section>
+                        <h2>Dudas</h2>
+                        <div class="content">
+                            <div class="my-2 text-justify font-light text-gray-900">
+                                Dudas sobre la información, modalidades o proceso editorial con el editor: <strong class="font-semibold text-gray-900 "> Marco Alonso García Romero, Editor de <strong class="font-semibold text-gray-900">ExpreSciencia</strong>. al correo:  <a href="mailto:expresciencia@zacatecas.tecnm.mx"> <i class="ph-at"></i> expresciencia@zacatecas.tecnm.mx</a>. </strong>
+                            </div>        
+                        </div>
+                    </section>
+                </div>
+            </section>
+        </section>
+    </main>
+</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--accent-dark);
+}
+
+.content {
+    grid-column: 2 / 4;
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+</style>

@@ -1,0 +1,97 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import Imagen from '../components/Imagen.astro';
+
+const currentYear = new Date().getFullYear();
+const periodo = "enero - junio "
+const fecha = "15 de abril de 2023"
+---
+<script src="https://unpkg.com/phosphor-icons"></script>
+<BaseLayout title="Index">
+<div class="stack gap-20">
+    <main class="wrapper about">
+        <Hero
+            title="Volúmenes"
+            tagline=""
+        >
+        </Hero>
+        <section>
+            <h2 class="section-title">Año 1, No. 1, {currentYear}</h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left">
+					Se encuentra proceso de recepción de trabajos para su próxima publicación, si desea colaborar consulte la <a href="/"> <i class="ph-link"></i>convocatoria</a> para la recepción de los mismos.
+                    <!-- <Hero
+                    title=""
+                    tagline=""
+                    >
+                    <img class="object-cover h-50 w-50"
+                        src="/assets/portadas/portada.png"
+                        alt="portada"
+                    />
+                </Hero> -->
+				</div> 
+            </div>
+        </section>
+    </main>
+</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--accent-dark);
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--accent-dark);
+}
+
+.content {
+    grid-column: 2 / 4;
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+</style>

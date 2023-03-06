@@ -1,0 +1,264 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+
+const volumen = 1 //numero de años que la revista ha estado en publicación
+const numero = 1 //numero de ejemplar del año
+const anio = new Date().getFullYear();
+const fecha = "15 de abril de 2023"
+
+const lineas =[
+	           "Planeación didáctica de la arquitectura y el urbanismo", 
+			   "Análisis de la arquitectura y urbanismo",
+			   "Pequeñas y medianas empresas",
+			   "Administración de recursos humanos",
+			   "Ingeniería de software",
+			] 
+
+const tipos=[
+			"Articulo de investigación científica y tecnológica",
+			 "Artículo de divulgación del conocimiento",
+			 "Informe de estudio de caso",
+			 "Reseña",
+			]
+---
+<script src="https://unpkg.com/phosphor-icons"></script>
+<BaseLayout title="Index">
+<div class="stack gap-20">
+    <main class="wrapper about">
+        <Hero
+            title="Call for papers"
+            tagline=""
+        >
+        </Hero>
+        <section>
+            <h2 class="section-title">Convocatoria</h2>
+            <div class="content">
+                <div class="my-2 mb-4 text-justify font-light text-gray-900 first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:text-gray-900 first-letter:mr-3 first-letter:float-left"> 
+				La revista <strong class="font-semibold text-gray-900">ExpreSciencia</strong> es una revista de publicación semestral y de publicación contínua perteneciente al <strong class="font-semibold text-gray-900">Instituto Tecnológico de Zacatecas</strong> editada a través de la <strong class="font-semibold text-gray-900">División de Estudios de Posgrado e Investigación.</strong>
+				</div>
+				<div class="my-2 text-justify font-light text-gray-900">
+					<strong class="font-semibold text-gray-900">ExpreSciencia</strong> basa sus políticas de publicación en la <strong class="font-semibold text-gray-900 ">revisión doble ciego por pares y el acceso abierto a la información</strong>. <strong class="font-semibold text-gray-900">ExpreSciencia</strong> asume el reto de hacer transparente todo el proceso editorial en la publicación de sus ejemplares.
+				</div>
+					
+				<div class="text-justify font-light text-gray-900">
+					Nuestra misión es <strong class="font-semibold text-gray-900 ">divulgar y reportar los resultados los científicos y tecnolígicos</strong> con la finalidad de promover, generar y desarrollar conocimiento en las diversas áreas del conocimiento y en las siguientes líneas de investigación:
+				</div>
+
+				<section>
+					<h2 class="section-title my-5">Licenciatura en Administración</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Administración del desarrollo empresarial</li>
+							<li><i class="ph-check  text-gray-900 "></i> Estrategias Empresariales</li>
+							<li><i class="ph-check  text-gray-900 "></i> Formulación y Evaluación de Proyectos</li>
+						</ul>					
+					</div>
+				</section>
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería Industrial</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Manufactura y calidad</li>
+							<li><i class="ph-check  text-gray-900 "></i> Administración de Sistemas de Manufactura</li>
+						</ul>
+					</div>
+				</section>
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería en Sistemas Computacionales</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Tópicos avanzados de ingeniería de software
+							</li>
+							<li><i class="ph-check  text-gray-900 "></i> Tecnologías de desarrollo web y móvil</li>
+							<li><i class="ph-check  text-gray-900 "></i> Redes, gestión de datos y conectividad</li>
+							<li><i class="ph-check  text-gray-900 "></i> Desarrollo de Software e Infraestructura de Red</li>
+							<li><i class="ph-check  text-gray-900 "></i> Programación de Sistemas y Cómputo Móvil</li>
+						</ul>
+					</div>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería en Materiales</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Ingeniería en Materiales</li>
+						</ul>
+					</div>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería en en Gestión Empresarial</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Sistemas de gestión empresarial e innovación
+							</li>
+							<li><i class="ph-check  text-gray-900 "></i> Innovación de la gestión</li>
+							<li><i class="ph-check  text-gray-900 "></i> Gestión de negocios</li>
+							<li><i class="ph-check  text-gray-900 "></i> Emprendimiento y Start Up</li>
+							<li><i class="ph-check  text-gray-900 "></i> Sistemas de Innovación e Investigación Tecnológica Empresarial</li>
+						</ul>
+					</div>
+				</section>	
+				 		
+				<section>
+					<h2 class="section-title my-5">Arquitectura</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Estudios de la Arquitectura y el Urbanismo</li>
+						</ul>
+					</div>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería en Electromecánica</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Automatización, Instrumentación y Control</li>
+						</ul>
+					</div>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Ingeniería en Informática</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Ingeniería de Software e Infraestructura Tecnológica</li>
+							<li><i class="ph-check  text-gray-900 "></i> Aplicaciones y Servicios sobre Internet</li>
+						</ul>
+					</div>
+				</section>				
+
+				<section>
+					<h2 class="section-title my-5">Maestría en Arquitectura</h2>
+					<ul class="pl-5 mt-2 space-y-1 list-inside">
+						<li><i class="ph-check  text-gray-900 "></i> Planeación didáctica de la arquitectura y el urbanismo</li>
+						<li><i class="ph-check  text-gray-900 "></i> Análisis de la arquitectura y urbanismo</li>
+					</ul>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Maestría en Administración</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Pequeñas y medianas empresas</li>
+							<li><i class="ph-check  text-gray-900 "></i> Administración de recursos humanos</li>
+						</ul>
+					</div>
+				</section>	
+
+				<section>
+					<h2 class="section-title my-5">Maestría en Sistemas Computacionales</h2>
+					<div class="content">
+						<ul class="pl-5 mt-2 space-y-1 list-inside">
+							<li><i class="ph-check  text-gray-900 "></i> Ingeniería de Software</li>
+						</ul>
+					</div>
+				</section>	
+				
+				<div class="my-5 text-justify font-light text-gray-900">El objetivo de la revista <strong class="font-semibold text-gray-900">ExpreSciencia</strong> es <strong class="font-semibold text-gray-900">es ofrecer un medio de difusión, amplia circulación y de interés, para los académicos que se relacionan con la investigación y/o la difusión.</strong> 
+				Esto se logrará con la participación de los autores, árbitros y lectores, para darle fuerza a una empresa de esta magnitud. También es una puerta abierta para los investigadores de otras instituciones que con sus aportaciones puedan enriquecer el contenido de la revista.</div>
+
+				<div class="my-5 text-justify font-light text-gray-900">
+					Por lo tanto, <strong class="font-semibold text-gray-900 ">ExpreSciencia CONVOCA</strong> a todo aquel investigador/académico interesado en <strong class="font-semibold text-gray-900 ">publicar obras inéditas y originales</strong> a presentar manuscritos que muestren el conocimiento científico y tecnológico en alguna de las siguientes modalidades:
+				</div>
+				<section>
+					<h2 class="section-title py-4">Modalidades</h2>
+					<div class="content">
+						<ul class="space-y-1 text-gray-900 list-disc list-inside ml-7">
+							{
+								tipos.map((tipo) => (
+									<li class="flex pt-2">
+										<svg class="w-4 h-4 mr-1.5 mb-4 text-blue-900 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+										{tipo}
+									</li>
+								))
+							}
+						</ul>						
+					</div>
+				</section>
+
+				<div class="my-2 mt-4 text-justify font-light text-gray-900">
+					Los trabajos recibido serán publicadas bajo las políticas de <strong class="font-semibold text-gray-900 ">revisión doble ciego por pares y el acceso abierto</strong> en el <strong class="font-semibold text-gray-900 ">Volumen {volumen} número {numero}</strong>, correspondiente al año <strong class="font-semibold text-gray-900 ">{anio}</strong>.  Los autores que sometan sus contribuciones a la revista, ceden los derechos a la revista <strong class="font-semibold text-gray-900 ">ExpreSciencia</strong>, permitiendo su publicación ya sea en formato físico y/o electrónico. Todos los manuscritos deberán sujetarse a las reglas, requisitos y el formato que se encuentran en la sección <a href="guiaautores"><i class="ph-link"></i>Guía para autores</a>.
+				</div>
+					
+				<div class="my-2 text-justify font-light text-gray-900">
+					Les informamos que el plazo de presentación de artículos para el volumen <strong class="font-semibold text-gray-900 ">{numero}/{anio}</strong> de <strong class="font-semibold text-gray-900">ExpreSciencia</strong> finaliza el <strong class="font-semibold text-gray-900 ">{fecha}</strong>
+				</div>
+					
+				<div class="my-2 text-justify font-light text-gray-900">
+					El proceso editorial consta de las siguientes etapas: envío de manuscrito por <strong class="font-semibold text-gray-900 ">autor</strong>, aceptación del envío por <strong class="font-semibold text-gray-900 ">editor</strong> de revista, revisión por <strong class="font-semibold text-gray-900 ">pares</strong>, decisión editorial con base en el dictamen de revisores, solicitud y envío de correcciones al manuscrito en caso de ser requerido, corrección de estilo, maquetación de artículo, pruebas finales por parte del <strong class="font-semibold text-gray-900 ">autor</strong>, corrección final pór el <strong class="font-semibold text-gray-900 ">autor</strong> y por último publicación en distintos medios digitales como PDF, HTML en este sitio y de manera física. Cabe destacar que la publicación en la revista se realiza por número, esto quiere decir que el manuscrito será publicado en conjunto con todos los artículos que componen el número.
+						
+					Dudas sobre la información, modalidades o proceso editorial con el editor: <strong class="font-semibold text-gray-900 "> Marco Alonso García Romero, Editor de <strong class="font-semibold text-gray-900">ExpreSciencia</strong>. al correo:  <a href="mailto:expresciencia@zacatecas.tecnm.mx"> <i class="ph-at"></i> expresciencia@zacatecas.tecnm.mx</a>. </strong>
+				</div>
+					
+					
+				<div class="text-center section-title mt-9">Atentamente</div>
+				<div class="text-center section-title mb-5"><b>Comité Editorial</b></div>
+									   
+			</div>
+        </section>
+    </main>
+</div>
+</BaseLayout>
+
+
+<style>
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+}
+
+img {
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--gray-200);
+}
+
+.section-title {
+    grid-column-start: 1;
+    font-size: var(--text-xl);
+    color: var(--accent-dark);
+}
+
+.content {
+    grid-column: 2 / 4;
+}
+
+.content :global(a) {
+    text-decoration: 1px solid underline transparent;
+    text-underline-offset: 0.25em;
+    transition: text-decoration-color var(--theme-transition);
+}
+
+.content :global(a:hover),
+.content :global(a:focus) {
+    text-decoration-color: currentColor;
+}
+
+@media (min-width: 50em) {
+    .about {
+        display: grid;
+        grid-template-columns: 1fr 60% 1fr;
+    }
+
+    .about > :global(:first-child) {
+        grid-column-start: 2;
+    }
+
+    section {
+        display: contents;
+        font-size: var(--text-lg);
+    }
+}
+</style>
